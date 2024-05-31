@@ -14,12 +14,16 @@ def main():
         map.getGoalMap()
     print("To generate the goal map, type 'generate'")
     print("To delete all entities, type 'delete'")
+    print("To exit, type 'exit'")
     while True:
-        action = input("What would you like to do? (generate/delete): ")
+        action = input("What would you like to do? (generate/delete/exit): ")
         if action == "generate":
             map.generateGoalMap()
         elif action == "delete":
             map.deleteAllEntities()
+        elif action == "exit":
+            print("Goodbye!")
+            return
         else:
             print("Invalid action. Please try again.")
             return
