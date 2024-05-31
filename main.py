@@ -6,7 +6,7 @@ def main():
     print("Do you want to use the default candidateId? (y/n)")
     use_default = input()
     if use_default == "n":
-        candidateId = input("Please enter the candidateId: ")
+        candidateId = input("Please enter the candidate ID: ")
         map = Map(candidateId)
         map.getGoalMap()
     else:
